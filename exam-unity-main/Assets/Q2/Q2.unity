@@ -167,6 +167,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 600459423}
+  usePlayButtonAnimator: 0
+  playButtonAnimator: {fileID: 0}
+  playButtonRect: {fileID: 0}
+  playButtonGraphic: {fileID: 0}
 --- !u!1 &239417072
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,7 +255,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 81724846}
-        m_TargetAssemblyTypeName: Q3, Assembly-CSharp
+        m_TargetAssemblyTypeName: Q2, Assembly-CSharp
         m_MethodName: OnShowBtnClick
         m_Mode: 1
         m_Arguments:
@@ -406,6 +410,7 @@ GameObject:
   - component: {fileID: 600459425}
   - component: {fileID: 600459424}
   - component: {fileID: 600459423}
+  - component: {fileID: 600459426}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -514,6 +519,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600459421}
   m_CullTransparentMesh: 1
+--- !u!95 &600459426
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600459421}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &848803781
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,8 +624,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 81724846}
-        m_TargetAssemblyTypeName: Q3, Assembly-CSharp
-        m_MethodName: OnTouchUpBtnClick
+        m_TargetAssemblyTypeName: Q2, Assembly-CSharp
+        m_MethodName: OnTouchDownBtnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1060,8 +1086,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 81724846}
-        m_TargetAssemblyTypeName: Q3, Assembly-CSharp
-        m_MethodName: OnTouchDownBtnClick
+        m_TargetAssemblyTypeName: Q2, Assembly-CSharp
+        m_MethodName: OnTouchUpBtnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
